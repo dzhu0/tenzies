@@ -9,7 +9,7 @@ export default function App() {
     const [tenzies, setTenzies] = React.useState(false)
     const [count, setCount] = React.useState(0)
     const [record, setRecord] = React.useState(
-        () => JSON.parse(localStorage.getItem("record")) || 0
+        () => JSON.parse(localStorage.getItem("record")) || 100
     )
 
     React.useEffect(() => {
